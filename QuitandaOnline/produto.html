@@ -22,7 +22,7 @@
     <!-- css interno -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Quitanda Online :: Recuperação de Senha</title>
+    <title>Quitanda Online :: Detalhes do Produto "Banana Prata"</title>
 </head>
 <body>
     <div class=" d-flex flex-column wrapper">
@@ -63,20 +63,38 @@
 
       <main class="flex-fill">
         <div class="container">
-            <div class="row justify-content-center">
-              <form class="col-sm-10 col-md-8 col-lg-6">
-                <h1>Recuperação de Senha</h1>
-
-                <div class="form-floating mb-3">
-                  <input type="email" id="txtEmail" class="form-control" placeholder=" " autofocus>
-                  <label for="txtEmail">E-mail</label>
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <img src="img/produtos/000001.jpg" class="img-thumbnail" id="imgProduto">
+                <br class="clearfix">
+                <div class="row my-3 gx-3">
+                  <div class="col-3">
+                    <img src="img/produtos/000001.jpg" class="img-thumbnail" onclick="trocaImagem(this)">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/produtos/000002.jpg" class="img-thumbnail" onclick="trocaImagem(this)">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/produtos/000003.jpg" class="img-thumbnail" onclick="trocaImagem(this)">
+                  </div>
+                  <div class="col-3">
+                    <img src="img/produtos/000004.jpg" class="img-thumbnail" onclick="trocaImagem(this)">
+                  </div>
                 </div>
-                
-                <button type="button" onclick="window.location.href='/confirmrecupsenha.html'" class="btn btn-lg btn-danger">Recuperar Senha</button>
-                <p class="mt-3">
-                  Ainda não é cadastrado? <a href="/cadastro.html">Clique aqui</a> para se cadastrar.
-                </p>
-              </form>
+              </div>
+                <div class="col-12 col-sm-6">
+                  <h1>Banana Prata</h1>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit doloribus, laboriosam deserunt unde modi fugit minus facere cum vitae ex asperiores, alias possimus, nulla aperiam blanditiis debitis aspernatur voluptate mollitia?
+                  </p>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe in tempora. Iste a dolores repellendus iusto, architecto mollitia libero, omnis expedita inventore dicta dolore error neque. Laboriosam corrupti praesentium quis sunt saepe cumque. Excepturi accusamus est voluptatem in doloremque optio veritatis! Nisi nulla porro ut nam in beatae exercitationem!
+                  </p>
+                  <p>
+                    <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2"><i class="bi-cart"></i> Adicionar ao Carrinho</button>
+                    <button class="btn btn-lg btn-outline-danger"><i class="bi-heart"></i> Adicionar aos Favoritos</button>
+                  </p>
+              </div>
             </div>
         </div>
       </main>
@@ -104,5 +122,11 @@
         </div>
       </footer>
     </div>
+    <script>
+      function trocaImagem(el){
+        var imgProduto = document.getElementById("imgProduto");
+        imgProduto.src = el.src;
+      }
+    </script>
 </body>
 </html>
